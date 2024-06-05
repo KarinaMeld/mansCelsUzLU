@@ -27,9 +27,16 @@ body {
   color: var(--text-color);
 }
 
-.container,
-.container-xl {
-  background-color: var(--background-color);
+.container {
+  overflow: visible;
+  height: fit-content;
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+  @media (max-width: 767px) {
+    width: 100vw;
+    margin-top: 50px;
+  }
 }
 
 button {

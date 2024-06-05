@@ -17,9 +17,9 @@ export default function Home() {
         <div className="row row-one">
           <div className="col-7">
             <p className="step-info">
-              katrs mans rīts sākas "mājās". kā es aprakstītu savas mājas?
-              haoss. tīrākais haoss. šogad šo haosu vēl vairāk saasināja divu
-              identiski pelēku kaķēnu uzrašanās.
+              katrs mans rīts sākas &quot;mājās&quot;. kā es aprakstītu savas
+              mājas? haoss. tīrākais haoss. šogad šo haosu vēl vairāk saasināja
+              divu identiski pelēku kaķēnu uzrašanās.
             </p>
             <p>
               par viņu darbībām visvairāk informēta ir manas mammas mīļākā puķe.
@@ -27,7 +27,9 @@ export default function Home() {
               jau trīs reizes (balstoties uz man piejamo informāciju
               05.06.2024.).
             </p>
-            <p id="img-description">Attēls: "kaķēni bļodā", Vangaži, 2024.</p>
+            <p id="img-description">
+              Attēls: &quot;kaķēni bļodā&quot;, Karīna Meldere, Vangaži, 2024.
+            </p>
           </div>
           <div className="col-5">
             <div className="vertical-line"></div>
@@ -44,11 +46,12 @@ export default function Home() {
         <div className="row row-two">
           <div className="board-game-info col-7">
             <h3 className="board-game-heading">
-              <i>"Exploding kittens"</i>
+              <i>&quot;Exploding kittens&quot;</i>
             </h3>
             <p>this is a longer explanation about the board game</p>
             <p id="img-description">
-              Attēls: "Exploding kittens board game", Jūrmala, 2024.
+              Attēls: &quot;Exploding kittens board game&quot;, Karīna Meldere,
+              Jūrmala, 2024.
             </p>
           </div>
           <div className="col-5">
