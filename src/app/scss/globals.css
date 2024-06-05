@@ -3,12 +3,12 @@
 /* Define CSS variables for light theme */
 :root {
   --background-color: #ffffff;
-  --background-color-darker: #06121f;
-  --background-color-darkest: #1e2a38;
+  --background-color-light: #d5d7ca;
+  --background-color-lightest: #a2a294;
   --text-color: #000000;
-  --yellow: #0c2165;
-  --blue: #818065;
-  --red: #146b79;
+  --yellow: #c49811;
+  --blue: #2b7687;
+  --red: #c63353;
 }
 
 /* Define CSS variables for dark theme */
@@ -25,6 +25,8 @@
 body {
   background-color: var(--background-color);
   color: var(--text-color);
+
+  overflow-x: hidden;
 }
 
 .container-custom {

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import NavBar from "./components/navbar";
 import Footer from "./components/footer";
+import BootstrapClient from "./components/BootstrapClient";
 
 import "bootstrap/dist/css/bootstrap.css";
 import "./scss/globals.css";
@@ -24,6 +25,7 @@ export default function RootLayout({
         <NavBar />
         <main>{children}</main>
         <Footer />
+        <BootstrapClient />
       </body>
     </html>
   );

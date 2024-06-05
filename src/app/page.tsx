@@ -1,8 +1,13 @@
 import Image from "next/image";
 import React from "react";
 import "./scss/landing.scss";
-import bilde from "@/app/images/boardgame-pile.png";
-import pile from "@/app/images/board-game-pile.png";
+import allboardgames from "@/app/images/boardgame-pile.png";
+import kittens from "@/app/images/kittens-bloda.png";
+import rearview from "@/app/images/rearview.png";
+import vecriga_nakts from "@/app/images/vecriga-nakts.png";
+import night_bus from "@/app/images/bus.png";
+import coding from "@/app/images/coding.png";
+import brugis from "@/app/images/brugis.png";
 import arrow1 from "@/app/images/Arrow1.svg";
 import arrow2 from "@/app/images/Arrow2.svg";
 import arrow3 from "@/app/images/Arrow3.svg";
@@ -19,7 +24,7 @@ const landing = () => {
           <div className="decorative-line first-line col align-self-center"></div>
 
           <div className="content  col align-self-center">
-            <Image src={pile} alt="Image" className="image" />
+            <Image src={allboardgames} alt="Image" className="image" />
           </div>
 
           <div className="decorative-line second-line col align-self-center"></div>
@@ -31,7 +36,7 @@ const landing = () => {
           <div className="col-md-6">
             <h2>mājas</h2>
             <p>dienu sāku mājās ar diviem pustrakiem kaķēniem.</p>
-            <p>varētu pat teikt, ka viņi ir eksplozīvi.</p>
+            <p>viņi ir nelieli haosa mīļi.</p>
             <div className="d-flex justify-content-center">
               <Image
                 src={arrow1}
@@ -44,7 +49,7 @@ const landing = () => {
           <div className="col-md-6">
             <div className="d-flex justify-content-end">
               <Image
-                src={bilde}
+                src={kittens}
                 alt="Image"
                 className="image image-one img-fluid"
               />
@@ -69,7 +74,7 @@ const landing = () => {
           <div className="col-md-6">
             <div className="d-flex justify-content-start">
               <Image
-                src={bilde}
+                src={rearview}
                 alt="Image"
                 className="image image-two img-fluid"
               />
@@ -87,7 +92,7 @@ const landing = () => {
           <div className="col-md-6">
             <div className="d-flex justify-content-end">
               <Image
-                src={bilde}
+                src={brugis}
                 alt="Image"
                 className="image image-three img-fluid"
               />
@@ -118,7 +123,7 @@ const landing = () => {
           <div className="col-md-6">
             <div className="d-flex justify-content-start">
               <Image
-                src={bilde}
+                src={night_bus}
                 alt="Image"
                 className="image image-four img-fluid"
               />
@@ -145,7 +150,7 @@ const landing = () => {
           <div className="col-md-6">
             <div className="d-flex justify-content-end">
               <Image
-                src={bilde}
+                src={vecriga_nakts}
                 alt="Image"
                 className="image image-five img-fluid"
               />
@@ -162,7 +167,7 @@ const landing = () => {
           <div className="col-md-6">
             <div className="d-flex justify-content-start">
               <Image
-                src={bilde}
+                src={coding}
                 alt="Image"
                 className="image image-six img-fluid"
               />
