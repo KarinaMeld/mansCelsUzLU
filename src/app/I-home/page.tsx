@@ -44,7 +44,7 @@ export default function Home() {
         <div className="row row-two">
           <div className="board-game-info col-7">
             <h3 className="board-game-heading">
-              <i>Exploding kittens</i>
+              <i>"Exploding kittens"</i>
             </h3>
             <p>this is a longer explanation about the board game</p>
             <p id="img-description">
@@ -64,23 +64,25 @@ export default function Home() {
         </div>
         <div className="navigation-buttons row">
           <div className="col-7">
-            <Image
-              src={arrow5}
-              alt="Arrow SVG"
-              className="arrow arrow-one img-fluid"
-            />
             <div className="nav-but button-prev">
-              <Link href={"/"} className="link"></Link>
+              <Link href={"/"} className="link">
+                <Image
+                  src={arrow5}
+                  alt="Arrow SVG"
+                  className="arrow arrow-one img-fluid"
+                />
+              </Link>
             </div>
           </div>
           <div className="col-5">
-            <Image
-              src={arrow6}
-              alt="Arrow SVG"
-              className="arrow arrow-two img-fluid"
-            />
             <div className="nav-but button-next">
-              <Link href={"/"} className="link"></Link>
+              <Link href={"/"} className="link">
+                <Image
+                  src={arrow6}
+                  alt="Arrow SVG"
+                  className="arrow arrow-two img-fluid"
+                />
+              </Link>
             </div>
           </div>
         </div>
