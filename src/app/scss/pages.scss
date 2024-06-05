@@ -149,6 +149,11 @@
       background-color: var(--red);
     }
 
+    .arrow {
+      filter: invert(30%) sepia(100%) saturate(80%) hue-rotate(0deg)
+        brightness(100%) contrast(100%);
+    }
+
     .arrow-one {
       width: 100px;
       margin-top: -2%;

@@ -7,7 +7,7 @@ import rearview from "@/app/images/rearview.png";
 import vecriga_nakts from "@/app/images/vecriga-nakts.png";
 import night_bus from "@/app/images/bus.png";
 import coding from "@/app/images/coding.png";
-import brugis from "@/app/images/brugis.png";
+import teika from "@/app/images/teika.png";
 import arrow1 from "@/app/images/Arrow1.svg";
 import arrow2 from "@/app/images/Arrow2.svg";
 import arrow3 from "@/app/images/Arrow3.svg";
@@ -92,7 +92,7 @@ const landing = () => {
           <div className="col-md-6">
             <div className="d-flex justify-content-end">
               <Image
-                src={brugis}
+                src={teika}
                 alt="Image"
                 className="image image-three img-fluid"
               />

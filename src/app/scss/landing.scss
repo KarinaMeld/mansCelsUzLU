@@ -142,7 +142,10 @@ h1 {
 
   .arrow {
     opacity: 0.2;
-    color: var(--text-color);
+    &:not([data-theme="dark"]) {
+      filter: invert(33%) sepia(100%) saturate(2928%) hue-rotate(186deg)
+        brightness(92%) contrast(101%);
+    }
 
     &.arrow-one {
       width: 25vw;
