@@ -1,0 +1,140 @@
+@import "./globals.css";
+
+.container {
+  overflow: visible;
+  height: fit-content;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding-left: 0;
+
+  .heading-div {
+    h1 {
+      position: relative;
+      font-size: 57px;
+      color: #fff;
+      z-index: 1;
+      font-family: "Manrope", sans-serif;
+      font-size: 57px;
+      font-weight: 200;
+      padding-left: 50px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50px;
+        transform: translateY(-50%);
+        height: 1.5em;
+        width: 90vw;
+        background-color: var(--blue);
+        z-index: -1;
+        margin-left: 100px;
+      }
+    }
+  }
+
+  .rest-of-content {
+    margin-top: 0;
+
+    .row {
+      gap: 0;
+    }
+
+    .vertical-line {
+      position: relative;
+      top: 0;
+      left: 50%; /* Center the line horizontally in the container */
+      transform: translateX(-50%);
+      width: 2px; /* Adjust width as needed */
+      height: 100px;
+      background-color: #fff; /* Color of the vertical line */
+      z-index: 0; /* Ensure the line is behind the images */
+    }
+
+    .step-info {
+      margin-top: 200px;
+    }
+
+    .board-game-info {
+      margin-top: 200px;
+    }
+
+    h3 {
+      font-family: "Manrope", sans-serif;
+      font-size: 30px;
+      font-weight: 400;
+      padding-left: 50px;
+    }
+
+    p {
+      font-family: "Manrope", sans-serif;
+      font-size: 20px;
+      font-weight: 200;
+      padding-left: 50px;
+    }
+
+    .image {
+      margin-top: 0x;
+
+      &.image-one {
+        border: 12px solid var(--blue);
+        width: 450px;
+        height: auto;
+        z-index: 1;
+        rotate: -5deg;
+      }
+
+      &.image-two {
+        border: 12px solid var(--yellow);
+        width: 450px;
+        height: auto;
+        z-index: 1;
+        rotate: 3deg;
+      }
+    }
+  }
+
+  .navigation-buttons {
+    margin-top: 200px;
+
+    .nav-but {
+      position: relative;
+      width: 100%;
+      background-color: #fff;
+      height: 50px;
+    }
+
+    .button-prev {
+      background-color: var(--blue);
+    }
+
+    .button-next {
+      margin-top: 20px;
+      background-color: var(--red);
+    }
+
+    .arrow-one {
+      width: 100px;
+      margin-bottom: -45px;
+      margin-left: 15%;
+      position: relative;
+      z-index: 2;
+    }
+
+    .arrow-two {
+      width: 100px;
+      margin-bottom: -80px;
+      margin-left: 65%;
+      position: relative;
+      z-index: 2;
+    }
+
+    .link {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 100%;
+      content: "";
+    }
+  }
+}

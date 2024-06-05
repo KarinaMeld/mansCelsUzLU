@@ -37,4 +37,12 @@ button {
   color: var(--text-color);
 }
 
+#img-description {
+  font-style: italic;
+  font-family: "Manrope", sans-serif;
+  font-size: 12px;
+  font-weight: 200;
+  padding-left: 50px;
+}
+
 /* Add more styles as needed */
