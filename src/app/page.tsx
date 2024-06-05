@@ -1,95 +1,172 @@
 import Image from "next/image";
-import styles from "./page.module.css";
+import React from "react";
+import "./scss/landing.scss";
+import bilde from "@/app/images/boardgame-pile.png";
+import pile from "@/app/images/board-game-pile.png";
+import arrow1 from "@/app/images/Arrow1.svg";
+import arrow2 from "@/app/images/Arrow2.svg";
+import arrow3 from "@/app/images/Arrow3.svg";
+import arrow4 from "@/app/images/Arrow4.svg";
+import arrow5 from "@/app/images/Arrow5.svg";
+import arrow6 from "@/app/images/Arrow6.svg";
 
-export default function Home() {
+const landing = () => {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div className="landing-page container container-xl">
+      <div className="landing-hero">
+        <h1 className="landing-heading">mans ceļš uz Latvijas Universitāti</h1>
+        <div className="card-meow row">
+          <div className="decorative-line first-line col align-self-left"></div>
+          <div className="content  col align-self-center">
+            <Image src={pile} alt="Image" className="image" />
+          </div>
+          <div className="decorative-line second-line col align-self-right"></div>
         </div>
       </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className="landing-steps">
+        <div className="row">
+          <div className="col-6">
+            <h2>mājas</h2>
+            <p>dienu sāku mājās ar diviem pustrakiem kaķēniem.</p>
+            <p>varētu pat teikt, ka viņi ir eksplozīvi.</p>
+            <div className="d-flex justify-content-center">
+              <Image
+                src={arrow1}
+                alt="Arrow SVG"
+                className="arrow arrow-one img-fluid"
+              />
+            </div>
+          </div>
+
+          <div className="col-6">
+            <div className="d-flex justify-content-end">
+              <Image
+                src={bilde}
+                alt="Image"
+                className="image image-one img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className="row row-flip">
+          <div className="col-6">
+            <h2>starppilsētu autobuss</h2>
+            <p>universitātē nonāku, izmantojot starppilsētu autobusu.</p>
+            <p>brauciens ir aptuveni stundu ilgs.</p>
+            <div className="d-flex justify-content-center">
+              <Image
+                src={arrow2}
+                alt="Arrow SVG"
+                className="arrow arrow-two img-fluid"
+              />
+            </div>
+          </div>
+
+          <div className="col-6">
+            <div className="d-flex justify-content-start">
+              <Image
+                src={bilde}
+                alt="Image"
+                className="image image-two img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-6">
+            <h2>Teika</h2>
+            <p>Teikā neesmu ilgi.</p>
+            <div className="d-flex justify-content-center">
+              <Image
+                src={arrow3}
+                alt="Arrow SVG"
+                className="arrow arrow-three img-fluid"
+              />
+            </div>
+          </div>
+
+          <div className="col-6">
+            <div className="d-flex justify-content-end">
+              <Image
+                src={bilde}
+                alt="Image"
+                className="image image-three img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+        <div className="row row-flip">
+          <div className="col-6">
+            <h2>tramvajs</h2>
+            <p>1. tramvajs pārvietojas ātri</p>
+            <p>brauciens ir aptuveni stundu ilgs.</p>
+            <div className="d-flex justify-content-center">
+              <Image
+                src={arrow4}
+                alt="Arrow SVG"
+                className="arrow arrow-four img-fluid"
+              />
+            </div>
+          </div>
+
+          <div className="col-6">
+            <div className="d-flex justify-content-start">
+              <Image
+                src={bilde}
+                alt="Image"
+                className="image image-four img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className="row">
+          <div className="col-6">
+            <h2>Vecrīga</h2>
+            <p>
+              no tramvaja ejot apmaldīties nav viegli, bet Vecrīgā kopumā...
+            </p>
+          </div>
+
+          <div className="col-6">
+            <div className="d-flex justify-content-end">
+              <Image
+                src={bilde}
+                alt="Image"
+                className="image image-five img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className="row row-flip">
+          <div className="col-6">
+            <h2>universitāte</h2>
+            <p>manā universitātes ēkā tāda vēstures piegarša</p>
+            <div className="d-flex justify-content-center">
+              <Image
+                src={arrow5}
+                alt="Arrow SVG"
+                className="arrow arrow-five img-fluid"
+              />
+            </div>
+          </div>
+
+          <div className="col-6">
+            <div className="d-flex justify-content-start">
+              <Image
+                src={bilde}
+                alt="Image"
+                className="image image-six img-fluid"
+              />
+            </div>
+          </div>
+        </div>
       </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </div>
   );
-}
+};
+
+export default landing;

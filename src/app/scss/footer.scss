@@ -1,0 +1,17 @@
+@import "./globals.css";
+
+.footer {
+  margin-top: 100px;
+  background-color: var(--background-color-light);
+  color: white;
+  text-align: center;
+  bottom: 0;
+  width: 99%;
+}
+
+.footer-content p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}

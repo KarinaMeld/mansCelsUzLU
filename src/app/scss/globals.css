@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+/* Define CSS variables for light theme */
+:root {
+  --background-color: #ffffff;
+  --background-color-darker: #06121f;
+  --background-color-darkest: #1e2a38;
+  --text-color: #000000;
+  --yellow: #0c2165;
+  --blue: #818065;
+  --red: #146b79;
+}
+
+/* Define CSS variables for dark theme */
+[data-theme="dark"] {
+  --background-color: #020e1a;
+  --background-color-light: #06121f;
+  --background-color-lightest: #1e2a38;
+  --text-color: #ffffff;
+  --yellow: #f3de8a;
+  --blue: #7e7f9a;
+  --red: #eb9486;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.container,
+.container-xl {
+  background-color: var(--background-color);
+}
+
+button {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+/* Add more styles as needed */
