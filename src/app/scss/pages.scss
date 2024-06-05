@@ -80,7 +80,7 @@
 
     h3 {
       font-family: "Manrope", sans-serif;
-      font-size: 30px;
+      font-size: 28px;
       font-weight: 400;
       padding-left: 50px;
 
@@ -107,20 +107,17 @@
 
     .image {
       margin-top: 0x;
+      max-height: 400px;
+      width: auto;
+      z-index: 1;
 
       &.image-one {
         border: 12px solid var(--blue);
-        width: 450px;
-        height: auto;
-        z-index: 1;
         rotate: -5deg;
       }
 
       &.image-two {
         border: 12px solid var(--yellow);
-        width: 450px;
-        height: auto;
-        z-index: 1;
         rotate: 3deg;
       }
 

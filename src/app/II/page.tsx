@@ -76,7 +76,7 @@ export default function Home() {
         <div className="navigation-buttons row">
           <div className="col-7">
             <div className="nav-but button-prev">
-              <Link href={"/"} className="link">
+              <Link href={"/I"} className="link">
                 <Image
                   src={arrow5}
                   alt="Arrow SVG"
@@ -87,7 +87,7 @@ export default function Home() {
           </div>
           <div className="col-5">
             <div className="nav-but button-next">
-              <Link href={"/"} className="link">
+              <Link href={"/III"} className="link">
                 <Image
                   src={arrow6}
                   alt="Arrow SVG"

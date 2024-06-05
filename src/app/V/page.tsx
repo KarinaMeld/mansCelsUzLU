@@ -4,6 +4,8 @@ import "../scss/pages.scss";
 import Link from "next/link";
 import kitten from "@/app/images/kittens-bloda.png";
 import arrow5 from "@/app/images/Arrow5.svg";
+import cities from "@/app/images/game-lost-cities.png";
+import vecriga from "@/app/images/vecriga-nakts.png";
 import arrow6 from "@/app/images/Arrow6.svg";
 
 export default function Home() {
@@ -17,26 +19,23 @@ export default function Home() {
         <div className="row row-one">
           <div className="col-md-7">
             <p className="step-info">
-              katrs mans rīts sākas &quot;mājās&quot;. kā es aprakstītu savas
-              mājas? haoss. tīrākais haoss. šogad šo haosu vēl vairāk saasināja
-              divu identiski pelēku kaķēnu uzrašanās.
+              Vecrīgā ir lielākais ceļa posms, kas man no jāiet ar kājām -
+              izbaudu.
             </p>
             <p>
-              par viņu darbībām visvairāk informēta ir manas mammas mīļākā puķe.
-              viņu dēļ tā bijusi spiesta mainīt puķu podu un atrašanās vietu nu
-              jau trīs reizes (balstoties uz man piejamo informāciju
-              05.06.2024.).
+              šis ir arī tas ceļa posms, kurā visvieglāk nožēlot nepaņemtu
+              leitussargu - neizbaudu.
             </p>
             <p id="img-description">
-              Attēls: &quot;kaķēni bļodā&quot;, Karīna Meldere, Vangaži, 2024.
+              Attēls: &quot;Vecrīga naktī&quot;, Karīna Meldere, Rīga, 2024.
             </p>
           </div>
           <div className="col-md-5">
             <div className="vertical-line"></div>
             <div className="image d-flex justify-content-center">
               <Image
-                src={kitten}
-                alt="Picture of kittens"
+                src={vecriga}
+                alt="Old Riga during the night"
                 className="image img-fluid image-one"
               />
             </div>
@@ -46,11 +45,14 @@ export default function Home() {
         <div className="row row-two">
           <div className="board-game-info col-md-7">
             <h3 className="board-game-heading">
-              <i>&quot;Exploding kittens&quot;</i>
+              <i>&quot;Lost Cities&quot;</i>
             </h3>
-            <p>this is a longer explanation about the board game</p>
+            <p>
+              Šī spēle ir par piedzīvojumiem un ekspedīcijām, kas simbolizē
+              vēsturiskās vietas un kultūras bagātības izpēti.
+            </p>
             <p id="img-description">
-              Attēls: &quot;Exploding kittens board game&quot;, Karīna Meldere,
+              Attēls: &quot;Lost Cities&quot; galda spēle, Karīna Meldere,
               Jūrmala, 2024.
             </p>
           </div>
@@ -58,7 +60,7 @@ export default function Home() {
             <div className="vertical-line"></div>
             <div className="image d-flex justify-content-center">
               <Image
-                src={kitten}
+                src={cities}
                 alt="Picture of the board game 'Exploding Kittens'"
                 className="image img-fluid image-two"
               />
@@ -68,7 +70,7 @@ export default function Home() {
         <div className="navigation-buttons row">
           <div className="col-7">
             <div className="nav-but button-prev">
-              <Link href={"/"} className="link">
+              <Link href={"/IV"} className="link">
                 <Image
                   src={arrow5}
                   alt="Arrow SVG"
@@ -79,7 +81,7 @@ export default function Home() {
           </div>
           <div className="col-5">
             <div className="nav-but button-next">
-              <Link href={"/"} className="link">
+              <Link href={"/VI"} className="link">
                 <Image
                   src={arrow6}
                   alt="Arrow SVG"

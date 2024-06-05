@@ -3,6 +3,7 @@ import Image from "next/image";
 import "../scss/pages.scss";
 import Link from "next/link";
 import kitten from "@/app/images/kittens-bloda.png";
+import carcassonne from "@/app/images/game-car.png";
 import arrow5 from "@/app/images/Arrow5.svg";
 import arrow6 from "@/app/images/Arrow6.svg";
 
@@ -17,16 +18,9 @@ export default function Home() {
         <div className="row row-one">
           <div className="col-md-7">
             <p className="step-info">
-              katrs mans rīts sākas &quot;mājās&quot;. kā es aprakstītu savas
-              mājas? haoss. tīrākais haoss. šogad šo haosu vēl vairāk saasināja
-              divu identiski pelēku kaķēnu uzrašanās.
+              Teikā tikai pārkāpju uz nākamo transportu.
             </p>
-            <p>
-              par viņu darbībām visvairāk informēta ir manas mammas mīļākā puķe.
-              viņu dēļ tā bijusi spiesta mainīt puķu podu un atrašanās vietu nu
-              jau trīs reizes (balstoties uz man piejamo informāciju
-              05.06.2024.).
-            </p>
+            <p>Jā, tas tāpat ir viens mana maršruta posms.</p>
             <p id="img-description">
               Attēls: &quot;kaķēni bļodā&quot;, Karīna Meldere, Vangaži, 2024.
             </p>
@@ -46,11 +40,16 @@ export default function Home() {
         <div className="row row-two">
           <div className="board-game-info col-md-7">
             <h3 className="board-game-heading">
-              <i>&quot;Exploding kittens&quot;</i>
+              <i>&quot;Carcassonne&quot;</i>
             </h3>
-            <p>this is a longer explanation about the board game</p>
+            <p>
+              Šī spēle ir par pilsētu un ceļu būvēšanu, kas lieliski atspoguļo
+              pilsētas infrastruktūras attīstību. Teika agrāk kalpojis kā
+              diezgan industriāls rajons, tādēļ kāda spēle gan to raksturotu
+              labāk par carcassonne, kurā tas vien notiek kā būvniecīiba.
+            </p>
             <p id="img-description">
-              Attēls: &quot;Exploding kittens board game&quot;, Karīna Meldere,
+              Attēls: &quot;Carcassonne galda spēle&quot;, Karīna Meldere,
               Jūrmala, 2024.
             </p>
           </div>
@@ -58,7 +57,7 @@ export default function Home() {
             <div className="vertical-line"></div>
             <div className="image d-flex justify-content-center">
               <Image
-                src={kitten}
+                src={carcassonne}
                 alt="Picture of the board game 'Exploding Kittens'"
                 className="image img-fluid image-two"
               />
@@ -68,7 +67,7 @@ export default function Home() {
         <div className="navigation-buttons row">
           <div className="col-7">
             <div className="nav-but button-prev">
-              <Link href={"/"} className="link">
+              <Link href={"/II"} className="link">
                 <Image
                   src={arrow5}
                   alt="Arrow SVG"
@@ -79,7 +78,7 @@ export default function Home() {
           </div>
           <div className="col-5">
             <div className="nav-but button-next">
-              <Link href={"/"} className="link">
+              <Link href={"/IV"} className="link">
                 <Image
                   src={arrow6}
                   alt="Arrow SVG"

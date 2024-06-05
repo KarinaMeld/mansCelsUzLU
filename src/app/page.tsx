@@ -110,7 +110,8 @@ const landing = () => {
         <div className="row row-flip">
           <div className="col-md-6">
             <h2>tramvajs</h2>
-            <p>1. tramvajs pārvietojas ātri</p>
+            <p>pirmais tramvajs pārvietojas ātri</p>
+            <p> vai citreiz ne tik ātri</p>
             <div className="d-flex justify-content-center">
               <Image
                 src={arrow4}

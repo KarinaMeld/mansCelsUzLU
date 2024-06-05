@@ -34,6 +34,7 @@ body {
   height: fit-content;
   margin-top: 200px;
   margin-bottom: 100px;
+  width: 90vw;
 
   @media (max-width: 767px) {
     width: 100vw;
