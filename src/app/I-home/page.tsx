@@ -8,7 +8,7 @@ import arrow6 from "@/app/images/Arrow6.svg";
 
 export default function Home() {
   return (
-    <div className="container">
+    <div className="container container-custom">
       <div className="heading-div">
         <h1 className="">mājas, mīļās mājas</h1>
       </div>

@@ -8,25 +8,27 @@ import arrow2 from "@/app/images/Arrow2.svg";
 import arrow3 from "@/app/images/Arrow3.svg";
 import arrow4 from "@/app/images/Arrow4.svg";
 import arrow5 from "@/app/images/Arrow5.svg";
-import arrow6 from "@/app/images/Arrow6.svg";
 
 const landing = () => {
   return (
     <div className="landing-page container container-xl">
       <div className="landing-hero">
         <h1 className="landing-heading">mans ceļš uz Latvijas Universitāti</h1>
+
         <div className="card-meow row">
-          <div className="decorative-line first-line col align-self-left"></div>
+          <div className="decorative-line first-line col align-self-center"></div>
+
           <div className="content  col align-self-center">
             <Image src={pile} alt="Image" className="image" />
           </div>
-          <div className="decorative-line second-line col align-self-right"></div>
+
+          <div className="decorative-line second-line col align-self-center"></div>
         </div>
       </div>
 
       <div className="landing-steps">
         <div className="row">
-          <div className="col-6">
+          <div className="col-md-6">
             <h2>mājas</h2>
             <p>dienu sāku mājās ar diviem pustrakiem kaķēniem.</p>
             <p>varētu pat teikt, ka viņi ir eksplozīvi.</p>
@@ -39,7 +41,7 @@ const landing = () => {
             </div>
           </div>
 
-          <div className="col-6">
+          <div className="col-md-6">
             <div className="d-flex justify-content-end">
               <Image
                 src={bilde}
@@ -51,7 +53,7 @@ const landing = () => {
         </div>
 
         <div className="row row-flip">
-          <div className="col-6">
+          <div className="col-md-6">
             <h2>starppilsētu autobuss</h2>
             <p>universitātē nonāku, izmantojot starppilsētu autobusu.</p>
             <p>brauciens ir aptuveni stundu ilgs.</p>
@@ -64,7 +66,7 @@ const landing = () => {
             </div>
           </div>
 
-          <div className="col-6">
+          <div className="col-md-6">
             <div className="d-flex justify-content-start">
               <Image
                 src={bilde}
@@ -75,19 +77,14 @@ const landing = () => {
           </div>
         </div>
         <div className="row">
-          <div className="col-6">
+          <div className="col-md-6">
             <h2>Teika</h2>
-            <p>Teikā neesmu ilgi.</p>
-            <div className="d-flex justify-content-center">
-              <Image
-                src={arrow3}
-                alt="Arrow SVG"
-                className="arrow arrow-three img-fluid"
-              />
-            </div>
+            <p>
+              Teikā esmu tikai tik ilgi, lai noķertu nākamo transporta līdzekli.
+            </p>
           </div>
 
-          <div className="col-6">
+          <div className="col-md-6">
             <div className="d-flex justify-content-end">
               <Image
                 src={bilde}
@@ -96,12 +93,19 @@ const landing = () => {
               />
             </div>
           </div>
+          <div className="d-flex justify-content-center">
+            <Image
+              src={arrow3}
+              alt="Arrow SVG"
+              className="arrow arrow-three img-fluid"
+            />
+          </div>
         </div>
+
         <div className="row row-flip">
-          <div className="col-6">
+          <div className="col-md-6">
             <h2>tramvajs</h2>
             <p>1. tramvajs pārvietojas ātri</p>
-            <p>brauciens ir aptuveni stundu ilgs.</p>
             <div className="d-flex justify-content-center">
               <Image
                 src={arrow4}
@@ -111,7 +115,7 @@ const landing = () => {
             </div>
           </div>
 
-          <div className="col-6">
+          <div className="col-md-6">
             <div className="d-flex justify-content-start">
               <Image
                 src={bilde}
@@ -123,14 +127,22 @@ const landing = () => {
         </div>
 
         <div className="row">
-          <div className="col-6">
+          <div className="col-md-6">
             <h2>Vecrīga</h2>
             <p>
               no tramvaja ejot apmaldīties nav viegli, bet Vecrīgā kopumā...
             </p>
+
+            <div className="d-flex justify-content-center">
+              <Image
+                src={arrow5}
+                alt="Arrow SVG"
+                className="arrow arrow-five img-fluid"
+              />
+            </div>
           </div>
 
-          <div className="col-6">
+          <div className="col-md-6">
             <div className="d-flex justify-content-end">
               <Image
                 src={bilde}
@@ -142,19 +154,12 @@ const landing = () => {
         </div>
 
         <div className="row row-flip">
-          <div className="col-6">
+          <div className="col-md-6">
             <h2>universitāte</h2>
             <p>manā universitātes ēkā tāda vēstures piegarša</p>
-            <div className="d-flex justify-content-center">
-              <Image
-                src={arrow5}
-                alt="Arrow SVG"
-                className="arrow arrow-five img-fluid"
-              />
-            </div>
           </div>
 
-          <div className="col-6">
+          <div className="col-md-6">
             <div className="d-flex justify-content-start">
               <Image
                 src={bilde}

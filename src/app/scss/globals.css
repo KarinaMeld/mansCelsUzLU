@@ -27,10 +27,10 @@ body {
   color: var(--text-color);
 }
 
-.container {
+.container-custom {
   overflow: visible;
   height: fit-content;
-  margin-top: 100px;
+  margin-top: 200px;
   margin-bottom: 100px;
 
   @media (max-width: 767px) {
