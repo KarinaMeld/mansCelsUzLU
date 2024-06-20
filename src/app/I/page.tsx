@@ -54,6 +54,16 @@ export default function Home() {
               sagatavošanos ceļojumam, plānojot un organizējot savus resursus un
               laiku.
             </p>
+            <p>
+              Šī spēle man atgādina manu mīļāko filmu par kādu tik pat
+              entuziastisku dzīvnieku, šajā gadījumā gan - pandu. Kung Fu Panda
+              ir patiešām laba filma, ko skatīties pēc šīs spēles izpēlēšanas.
+              Ja tomēr neesmu pārliecinājusi -{" "}
+              <a href="https://dat-z3151-1.vercel.app/pages/kung-fu-panda-movie-review.html">
+                šeit var lasīt Bob Jones recenziju
+              </a>{" "}
+              par Kung Fu Pandu.
+            </p>
             <p id="img-description">
               Attēls: &quot;Draftosaurus galda spēle&quot;, Karīna Meldere,
               Jūrmala, 2024.
